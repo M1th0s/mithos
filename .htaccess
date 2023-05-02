@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteRule ^.well-known/ - [L,NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.mithos.cl/$1 [R,L]
